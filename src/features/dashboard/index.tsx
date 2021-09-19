@@ -1,13 +1,32 @@
 import React from 'react';
-import {useParams} from 'react-router-dom';
 
 export const Dashboard = () => {
-  const {sport} = useParams<{ sport: string }>();
-
   return (
-    <div className="container-fluid">
+    <div className="container-fluid pt-3">
       <div className="row">
-        Dashboard works! Viewing {sport}
+
+        <div className="col-6">
+          <div className="card">
+            <div className="card-header">
+              Latest movies ({(new Date()).getFullYear()})
+            </div>
+            <div className="card-body">
+              Test
+            </div>
+          </div>
+        </div>
+
+        <div className="col-6">
+          <div className="card">
+            <div className="card-header">
+              Latest movies
+            </div>
+            <div className="card-body">
+              Test
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -20,18 +20,15 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">Sportify</Link>
+      <Link className="navbar-brand" to="/">Walt Disney Movies Dataset</Link>
 
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <NavItemLink path={path} to="/">
             Home
           </NavItemLink>
-          <NavItemLink path={path} to="/s/nba">
-            NBA
-          </NavItemLink>
-          <NavItemLink path={path} to="/s/mlb">
-            MLB
+          <NavItemLink path={path} to="/m">
+            All movies
           </NavItemLink>
         </ul>
       </div>

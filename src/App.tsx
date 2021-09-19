@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import {Navbar} from './core/components';
-import {Dashboard} from './features';
+import {Navbar} from 'core/components';
+import {Dashboard} from 'features';
 
 function App() {
   return (
@@ -11,12 +11,12 @@ function App() {
         <Navbar/>
 
         <Switch>
-          <Route path="/s/:sport">
-            <Dashboard/>
+          <Route path="/m">
+            <h1>All movies</h1>
           </Route>
 
           <Route path="/">
-            <h1>Select a Sport</h1>
+            <Dashboard/>
           </Route>
         </Switch>
 
