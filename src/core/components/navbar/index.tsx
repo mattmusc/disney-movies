@@ -30,6 +30,9 @@ export const Navbar = () => {
           <NavItemLink path={path} to="/s/nba">
             NBA
           </NavItemLink>
+          <NavItemLink path={path} to="/s/mlb">
+            MLB
+          </NavItemLink>
         </ul>
       </div>
     </nav>

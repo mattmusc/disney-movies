@@ -5,9 +5,10 @@ export const Dashboard = () => {
   const {sport} = useParams<{ sport: string }>();
 
   return (
-    <div className="row">
-      Dashboard works!
-      Viewing {sport}
+    <div className="container-fluid">
+      <div className="row">
+        Dashboard works! Viewing {sport}
+      </div>
     </div>
   );
 };
