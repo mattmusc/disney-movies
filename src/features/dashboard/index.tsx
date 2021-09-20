@@ -1,3 +1,6 @@
+import {LatestMovies} from 'features/dashboard/components/LatestMovies';
+import {MoviesByBoxOffice} from 'features/dashboard/components/MoviesByBoxOffice';
+import {UnreleasedMovies} from 'features/dashboard/components/UnreleasedMovies';
 import React from 'react';
 
 export const Dashboard = () => {
@@ -6,25 +9,15 @@ export const Dashboard = () => {
       <div className="row">
 
         <div className="col-6">
-          <div className="card">
-            <div className="card-header">
-              Latest movies ({(new Date()).getFullYear()})
-            </div>
-            <div className="card-body">
-              Test
-            </div>
-          </div>
+          <LatestMovies/>
         </div>
 
         <div className="col-6">
-          <div className="card">
-            <div className="card-header">
-              Latest movies
-            </div>
-            <div className="card-body">
-              Test
-            </div>
-          </div>
+          <UnreleasedMovies/>
+        </div>
+
+        <div className="col-12 mt-3">
+          <MoviesByBoxOffice/>
         </div>
 
       </div>

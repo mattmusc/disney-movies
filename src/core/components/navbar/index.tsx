@@ -27,9 +27,6 @@ export const Navbar = () => {
           <NavItemLink path={path} to="/">
             Home
           </NavItemLink>
-          <NavItemLink path={path} to="/m">
-            All movies
-          </NavItemLink>
         </ul>
       </div>
     </nav>

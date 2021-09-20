@@ -1,14 +1,14 @@
-import {configureStore, createReducer} from '@reduxjs/toolkit';
+import {configureStore} from '@reduxjs/toolkit';
+import {dashboardApi} from 'features/dashboard/api';
+import {dashboardReducer} from 'features/reducers';
 
-export interface AppState {
-}
-
-const initialState: AppState = {};
-
-const rootReducer = createReducer(initialState, (() => {
-
-}));
-
-export const store = configureStore<AppState>({
-  reducer: rootReducer,
+export const store = configureStore({
+  reducer: {
+    [dashboardApi.reducerPath]: dashboardApi.reducer,
+    dashboard: dashboardReducer,
+  },
+  // Adding the api middleware enables caching, invalidation, polling,
+  // and other useful features of `rtk-query`.
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(dashboardApi.middleware),
 });

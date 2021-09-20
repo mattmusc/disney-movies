@@ -11,8 +11,8 @@ function App() {
         <Navbar/>
 
         <Switch>
-          <Route path="/m">
-            <h1>All movies</h1>
+          <Route path="/m/:id">
+            <h1>Movie detail</h1>
           </Route>
 
           <Route path="/">
