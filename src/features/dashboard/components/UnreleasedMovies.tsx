@@ -10,7 +10,7 @@ export const UnreleasedMovies = () => {
   return (
     <div className="card h-100">
       <div className="card-header">
-        Unrealeased Movies ({currentYear})
+        <h5>Unrealeased Movies ({currentYear})</h5>
       </div>
       <div className="card-body">
         {unreleasedLoading && 'Loading'}

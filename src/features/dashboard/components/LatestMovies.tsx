@@ -19,7 +19,7 @@ export const LatestMovies = () => {
 
       <div className="card-header">
         <div className="d-flex justify-content-between">
-          <div>Latest {nLatest} Movies ({currentYear})</div>
+          <h5>Latest {nLatest} Movies ({currentYear})</h5>
           <Dropdown options={nLatestOptions} value={nLatest} setValue={setNLatest}/>
         </div>
       </div>

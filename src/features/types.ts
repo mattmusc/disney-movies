@@ -3,4 +3,6 @@ export interface Movie {
   title: string;
   productionCompany: string;
   releaseDate: string;
+  boxOffice: number | undefined;
+  budget: number | undefined;
 }
