@@ -1,14 +1,14 @@
 import {ReactECharts} from 'core/components/charts/ReactECharts';
 import {useGetMoviesQuery} from 'features/dashboard/api';
+import {createTree} from 'features/dashboard/utility';
 import {Movie} from 'features/types';
 import React from 'react';
 
-type Node = {
-  name: string;
-  value: number;
-  children: Node[];
-};
-
+/**
+ * This widget creates a chart to compare box office and budget.
+ * It uses a TreeMap.
+ * @constructor
+ */
 export const MoviesByBoxOffice = () => {
     const {data = []} = useGetMoviesQuery();
 
@@ -46,90 +46,9 @@ export const MoviesByBoxOffice = () => {
     };
 
     const treeData = data
-      .filter((m: Movie) => m.budget && m.boxOffice)
       .filter((m: Movie) => filterBoxOffice(m) && filterBudget(m))
       .sort(sortByKeyDesc)
-      .reduce((nodes: Node[], m: Movie) => {
-        const boxOffice = m.boxOffice || 0;
-
-        if (nodes.length === 0) {
-          return [
-            {
-              name: '> 100M',
-              value: boxOffice,
-              children: [{
-                name: m.title,
-                value: boxOffice,
-                children: [],
-              }],
-            },
-          ];
-        }
-
-        if (boxOffice > 100e6) {
-
-          const children = nodes[nodes.length - 1].children;
-          children.push({
-            name: m.title,
-            value: boxOffice,
-            children: [],
-          });
-          return nodes;
-
-        } else if (boxOffice > 35e6 && nodes[nodes.length - 1].value > 100e6) {
-
-          return [
-            ...nodes,
-            {
-              name: '> 35M',
-              value: boxOffice,
-              children: [{
-                name: m.title,
-                value: boxOffice,
-                children: [],
-              }],
-            },
-          ];
-
-        } else if (boxOffice > 35e6) {
-
-          const children = nodes[nodes.length - 1].children;
-          children.push({
-            name: m.title,
-            value: boxOffice,
-            children: [],
-          });
-          return nodes;
-
-        } else if (boxOffice < 35e6 && nodes[nodes.length - 1].value > 35e6) {
-
-          return [
-            ...nodes,
-            {
-              name: '< 35M',
-              value: boxOffice,
-              children: [{
-                name: m.title,
-                value: boxOffice,
-                children: [],
-              }],
-            },
-          ];
-
-        } else if (boxOffice < 35e6) {
-
-          const children = nodes[nodes.length - 1].children;
-          children.push({
-            name: m.title,
-            value: boxOffice,
-            children: [],
-          });
-          return nodes;
-
-        }
-
-        return nodes;
-      }, []);
+      .reduce(createTree, []);
 
     return (
       <div className="card h-100">
