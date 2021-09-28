@@ -8,7 +8,7 @@ import React from 'react';
 
 export const Dashboard = () => {
   return (
-    <div className="container-fluid pt-4">
+    <div className="container-fluid pt-4 pb-4">
       <div className="row">
 
         <div className="col-4">
