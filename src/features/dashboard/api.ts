@@ -7,6 +7,10 @@ interface LatestMoviesConfig {
   releaseDate: string | undefined;
 }
 
+interface TopMoviesConfig {
+  n: number | undefined;
+}
+
 export const dashboardApi = createApi({
   reducerPath: 'dashboardApi',
 
@@ -23,10 +27,20 @@ export const dashboardApi = createApi({
         `/movies?releaseDate_gte=${releaseDate}&releaseDate_lte=${format(new Date(), 'yyyy-MM-dd')}&_limit=${n}`
     }),
 
+    getTopMovies: builder.query<Movie[], TopMoviesConfig>({
+      query: ({n}) =>
+        `/movies?_sort=boxOffice&_order=desc&_limit=${n}`
+    }),
+
     getUnreleasedMovies: builder.query<Movie[], void>({
       query: () => `/movies?releaseDate_gte=${format(new Date(), 'yyyy-MM-dd')}`
     })
   }),
 })
 
-export const {useGetLatestMoviesQuery, useGetUnreleasedMoviesQuery, useGetMoviesQuery} = dashboardApi
+export const {
+  useGetLatestMoviesQuery,
+  useGetUnreleasedMoviesQuery,
+  useGetMoviesQuery,
+  useGetTopMoviesQuery,
+} = dashboardApi
