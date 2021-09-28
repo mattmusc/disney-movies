@@ -1,4 +1,5 @@
 import {ReactECharts} from 'core/components/charts/ReactECharts';
+import {formatAsCurrency} from 'core/utils';
 import {useGetMoviesQuery} from 'features/dashboard/api';
 import {createTree} from 'features/dashboard/utility';
 import {Movie} from 'features/types';
@@ -10,7 +11,7 @@ import React from 'react';
  * @constructor
  */
 export const MoviesByBoxOffice = () => {
-    const {data = []} = useGetMoviesQuery();
+    const {data = [], isLoading} = useGetMoviesQuery();
 
     const [sortKey, setSortKey] = React.useState<'boxOffice' | 'budget'>('boxOffice');
     const [boxOfficeFilter, setBoxOfficeFilter] = React.useState<'all' | 'with' | 'without'>('all');
@@ -118,8 +119,16 @@ export const MoviesByBoxOffice = () => {
           style={{overflowY: 'scroll'}}
         >
           <ReactECharts
+            loading={isLoading}
             option={{
-              tooltip: {},
+              tooltip: {
+                formatter: params => {
+                  if (Array.isArray(params)) {
+                    return `${params[0].name} ${formatAsCurrency(params[0].value as number)}`;
+                  }
+                  return `${params['name']} <span class="fw-bold" style="margin-left: 0.75em">${formatAsCurrency(params.value as number)}</span>`;
+                },
+              },
               series: [
                 {
                   type: 'treemap',
