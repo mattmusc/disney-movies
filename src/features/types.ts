@@ -5,4 +5,5 @@ export interface Movie {
   releaseDate: string;
   boxOffice: number | undefined;
   budget: number | undefined;
+  starring: string[] | string | null;
 }

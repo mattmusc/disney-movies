@@ -1,3 +1,4 @@
+import {ActorsByMovies} from 'features/dashboard/components/ActorsByMovies';
 import {BoxOfficeBudgetStats} from 'features/dashboard/components/BoxOfficeBudgetStats';
 import {LatestMovies} from 'features/dashboard/components/LatestMovies';
 import {MoviesByBoxOffice} from 'features/dashboard/components/MoviesByBoxOffice';
@@ -28,6 +29,10 @@ export const Dashboard = () => {
 
         <div className="col-4 mt-4">
           <TopMovies/>
+        </div>
+
+        <div className="col-4 mt-4">
+          <ActorsByMovies/>
         </div>
 
       </div>
