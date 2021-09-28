@@ -7,6 +7,8 @@ interface UseFrequencyProps<T> {
   limit: number;
 }
 
+type HistogramElem = { name: string, appearances: number };
+
 
 export function useFrequency<T>({data, k, limit}: UseFrequencyProps<T>) {
   const ds = data
@@ -36,10 +38,14 @@ export function useFrequency<T>({data, k, limit}: UseFrequencyProps<T>) {
       return d;
     }, {});
 
+  const buildNameFreqObj = ([name, appearances]: [string, number]) => ({name, appearances});
+  const sortByFreqDesc = (a: HistogramElem, b: HistogramElem) => b.appearances - a.appearances;
+  const filterLimit = (x: HistogramElem, idx: number) => idx <= limit;
+
   const hist = Object.entries(ds)
-    .map(([actor, freq]) => ({name: actor, appearances: freq}))
-    .sort((a, b) => b.appearances - a.appearances)
-    .filter((_, idx) => idx <= limit);
+    .map(buildNameFreqObj)
+    .sort(sortByFreqDesc)
+    .filter(filterLimit);
 
   return {
     hist, ds,
