@@ -2,6 +2,28 @@ import {useGetMoviesQuery} from 'features/dashboard/api';
 import {Movie} from 'features/types';
 import React from 'react';
 
+interface MovieStatProps {
+  title: string;
+  value: number;
+  percentage: (x: number) => string;
+}
+
+function MovieStat({title, value, percentage}: MovieStatProps) {
+  return (
+    <div className="row pt-1 pb-1">
+      <div className="col-8 text-black-50">
+        {title}
+      </div>
+      <div className="col-2" style={{textAlign: 'right', paddingRight: 0, width: '21%'}}>
+        {value}
+      </div>
+      <div className="col-2" style={{textAlign: 'right', paddingLeft: 0, width: '12%'}}>
+        {percentage(value)}%
+      </div>
+    </div>
+  );
+}
+
 export function BoxOfficeBudgetStats() {
   const {data = []} = useGetMoviesQuery();
 
@@ -12,9 +34,12 @@ export function BoxOfficeBudgetStats() {
     .filter((m: Movie) => m.budget).length;
   const nOfMoviesWithBoxOffice = data
     .filter((m: Movie) => m.boxOffice).length;
-
   const nOfMoviesWithoutBoxOffice = Math.abs(data.length - nOfMoviesWithBoxOffice);
   const nOfMoviesWithoutBudget = Math.abs(data.length - nOfMoviesWithBudget);
+
+  const percentage = (x: number): string => data.length > 0
+    ? (x / data.length * 100).toPrecision(2)
+    : `${0}`;
 
   return (
     <div className="card h-100">
@@ -25,30 +50,35 @@ export function BoxOfficeBudgetStats() {
 
       <div className="card-body">
 
-        <div className="d-flex justify-content-between">
-          <p className="text-black-50">Movies with Box Office and Budget</p>
-          <p>{nOfMoviesWithBoxOfficeAndBudget}</p>
-        </div>
+        <MovieStat
+          title="Movies with Box Office and Budget"
+          value={nOfMoviesWithBoxOfficeAndBudget}
+          percentage={percentage}
+        />
 
-        <div className="d-flex justify-content-between">
-          <p className="text-black-50">Movies with Box Office</p>
-          <p>{nOfMoviesWithBoxOffice}</p>
-        </div>
+        <MovieStat
+          title="Movies with Box Office"
+          value={nOfMoviesWithBoxOffice}
+          percentage={percentage}
+        />
 
-        <div className="d-flex justify-content-between">
-          <p className="text-black-50">Movies with Budget</p>
-          <p>{nOfMoviesWithBudget}</p>
-        </div>
+        <MovieStat
+          title="Movies with Budget"
+          value={nOfMoviesWithBudget}
+          percentage={percentage}
+        />
 
-        <div className="d-flex justify-content-between">
-          <p className="text-black-50">Movies without Box Office</p>
-          <p>{nOfMoviesWithoutBoxOffice}</p>
-        </div>
+        <MovieStat
+          title="Movies without Box Office"
+          value={nOfMoviesWithoutBoxOffice}
+          percentage={percentage}
+        />
 
-        <div className="d-flex justify-content-between">
-          <p className="text-black-50">Movies without Budget</p>
-          <p>{nOfMoviesWithoutBudget}</p>
-        </div>
+        <MovieStat
+          title="Movies without Budget"
+          value={nOfMoviesWithoutBudget}
+          percentage={percentage}
+        />
 
       </div>
 
