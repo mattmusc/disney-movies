@@ -1,5 +1,6 @@
-import {ActorsByMovies} from 'features/dashboard/components/ActorsByMovies';
+import {ActorsByAppearance} from 'features/dashboard/components/ActorsByAppearance';
 import {BoxOfficeBudgetStats} from 'features/dashboard/components/BoxOfficeBudgetStats';
+import {CompaniesByProductions} from 'features/dashboard/components/CompaniesProductions';
 import {LatestMovies} from 'features/dashboard/components/LatestMovies';
 import {MoviesByBoxOffice} from 'features/dashboard/components/MoviesByBoxOffice';
 import {TopMovies} from 'features/dashboard/components/TopMovies';
@@ -32,7 +33,11 @@ export const Dashboard = () => {
         </div>
 
         <div className="col-4 mt-4">
-          <ActorsByMovies/>
+          <ActorsByAppearance/>
+        </div>
+
+        <div className="col-4 mt-4">
+          <CompaniesByProductions/>
         </div>
 
       </div>
