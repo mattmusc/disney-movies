@@ -21,7 +21,7 @@ export const Dashboard = () => {
           <BoxOfficeBudgetStats/>
         </div>
 
-        <div className="col-12 mt-4">
+        <div className="col-12 mt-2">
           <MoviesByBoxOffice/>
         </div>
 
