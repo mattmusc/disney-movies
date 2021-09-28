@@ -1,3 +1,4 @@
+import {MovieWithDate} from 'core/components';
 import {Dropdown} from 'core/components/dropdown';
 import {format, startOfYear} from 'date-fns';
 import {Movie} from 'features/types';
@@ -27,7 +28,9 @@ export const LatestMovies = () => {
       <div className="card-body">
         {isLoading && 'Loading'}
         {data.map((m: Movie) => (
-          <div key={m.id}>{m.releaseDate} - {m.title}</div>
+          <div key={m.id}>
+            <MovieWithDate title={m.title} date={m.releaseDate}/>
+          </div>
         ))}
       </div>
 

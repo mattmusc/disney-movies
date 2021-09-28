@@ -1,3 +1,4 @@
+import {MovieWithDate} from 'core/components';
 import {format} from 'date-fns';
 import {useGetUnreleasedMoviesQuery} from 'features/dashboard/api';
 import {Movie} from 'features/types';
@@ -15,7 +16,9 @@ export const UnreleasedMovies = () => {
       <div className="card-body">
         {unreleasedLoading && 'Loading'}
         {unreleasedMovies.map((m: Movie) => (
-          <div key={m.id}>{m.releaseDate} - {m.title}</div>
+          <div key={m.id}>
+            <MovieWithDate title={m.title} date={m.releaseDate}/>
+          </div>
         ))}
       </div>
     </div>
