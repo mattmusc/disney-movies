@@ -9,12 +9,14 @@ const nLatestOptions = [3, 5, 10]
 
 export const TopMovies = () => {
   const [nLatest, setNLatest] = React.useState(5);
+  const [sortKey, setSortKey] = React.useState<'boxOffice' | 'budget'>('boxOffice');
+
   const {data = [], isLoading} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
   const topMovies = data
     .filter((m: Movie) => m.boxOffice)
-    .sort((m1: Movie, m2: Movie) => (m2.boxOffice || 0) - (m1.boxOffice || 0))
+    .sort((m1: Movie, m2: Movie) => (m2[sortKey] || 0) - (m1[sortKey] || 0))
     .filter((m: Movie, idx: number) => idx <= nLatest)
 
   return (
@@ -23,7 +25,23 @@ export const TopMovies = () => {
       <div className="card-header">
         <div className="d-flex justify-content-between">
           <h5>Top {nLatest} Movies ({currentYear})</h5>
-          <Dropdown options={nLatestOptions} value={nLatest} setValue={setNLatest}/>
+
+          <div className="d-flex">
+            <span>Sort by:</span>
+            <div className="btn-group btn-group-sm mx-4">
+              <button
+                className={'btn btn-outline-secondary'.concat(sortKey === 'boxOffice' ? ' active' : '')}
+                onClick={() => setSortKey('boxOffice')}
+              >Box Office
+              </button>
+              <button
+                className={'btn btn-outline-secondary'.concat(sortKey === 'budget' ? ' active' : '')}
+                onClick={() => setSortKey('budget')}
+              >Budget
+              </button>
+            </div>
+            <Dropdown options={nLatestOptions} value={nLatest} setValue={setNLatest}/>
+          </div>
         </div>
       </div>
 
