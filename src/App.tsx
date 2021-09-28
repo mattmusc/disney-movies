@@ -1,14 +1,11 @@
+import {Dashboard} from 'features';
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
-import {Navbar} from 'core/components';
-import {Dashboard} from 'features';
 
 function App() {
   return (
     <div className="container-fluid">
       <Router>
-        <Navbar/>
 
         <Switch>
           <Route path="/m/:id">

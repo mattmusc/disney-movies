@@ -7,7 +7,7 @@ import React from 'react';
 
 export const Dashboard = () => {
   return (
-    <div className="container-fluid pt-2">
+    <div className="container-fluid pt-4">
       <div className="row">
 
         <div className="col-4">
@@ -22,11 +22,11 @@ export const Dashboard = () => {
           <BoxOfficeBudgetStats/>
         </div>
 
-        <div className="col-12 mt-2">
+        <div className="col-12 mt-4">
           <MoviesByBoxOffice/>
         </div>
 
-        <div className="col-4 mt-2">
+        <div className="col-4 mt-4">
           <TopMovies/>
         </div>
 
