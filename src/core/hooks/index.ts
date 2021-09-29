@@ -4,7 +4,7 @@ import {StringDictionary} from 'core/types';
 interface UseFrequencyProps<T> {
   data: T[];
   k: keyof T;
-  limit: number;
+  limit: number | null;
 }
 
 type HistogramElem = { name: string, appearances: number };
@@ -40,7 +40,7 @@ export function useFrequency<T>({data, k, limit}: UseFrequencyProps<T>) {
 
   const buildNameFreqObj = ([name, appearances]: [string, number]) => ({name, appearances});
   const sortByFreqDesc = (a: HistogramElem, b: HistogramElem) => b.appearances - a.appearances;
-  const filterLimit = (x: HistogramElem, idx: number) => idx <= limit;
+  const filterLimit = (x: HistogramElem, idx: number) => limit ? idx <= limit : true;
 
   const hist = Object.entries(ds)
     .map(buildNameFreqObj)

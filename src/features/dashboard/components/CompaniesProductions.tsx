@@ -12,7 +12,7 @@ export const CompaniesByProductions = () => {
   const {data = [], isLoading} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
-  const {hist: companies} = useFrequency({data, k: 'productionCompany', limit: nLatest});
+  const {hist: companies} = useFrequency({data, k: 'productionCompany', limit: null});
 
   return (
     <div className="card h-100">

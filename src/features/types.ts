@@ -1,7 +1,7 @@
 export interface Movie {
   id: number;
   title: string;
-  productionCompany: string[] | string | null;
+  productionCompany: string[] | null;
   releaseDate: string;
   boxOffice: number | undefined;
   budget: number | undefined;
