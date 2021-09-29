@@ -1,4 +1,4 @@
-import {Dashboard} from 'features';
+import {Dashboard, MovieDetail} from 'features';
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function App() {
 
         <Switch>
           <Route path="/m/:id">
-            <h1>Movie detail</h1>
+            <MovieDetail/>
           </Route>
 
           <Route path="/">
