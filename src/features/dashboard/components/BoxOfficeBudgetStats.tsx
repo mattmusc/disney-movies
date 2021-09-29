@@ -51,6 +51,12 @@ export function BoxOfficeBudgetStats() {
       <div className="card-body">
 
         <MovieStat
+          title="Total movies"
+          value={data.length}
+          percentage={() => '100'}
+        />
+
+        <MovieStat
           title="Movies with Box Office and Budget"
           value={nOfMoviesWithBoxOfficeAndBudget}
           percentage={percentage}
