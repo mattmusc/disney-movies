@@ -99,18 +99,32 @@ export const MovieDetail = () => {
         <div className="col-4 mt-4">
           <div className="card mh-100 shadow-sm rounded">
             <div className="card-header">
-              <h5>Starring</h5>
+              <h5>Starring ({data && data.starring?.length})</h5>
             </div>
             <div className="card-body">
               {!data && 'Loading...'}
-              {data && data.starring?.map(actor => (
-                <div key={actor}>
-                  <div className="text-black-50 pb-1">
-                    <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
-                    {actor}
-                  </div>
+              <div className="d-flex">
+                <div>
+                  {data && data.starring?.slice(0, 5).map(actor => (
+                    <div key={actor}>
+                      <div className="text-black-50 pb-1">
+                        <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
+                        {actor}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <div className="ms-5">
+                  {data && data.starring?.slice(5).map(actor => (
+                    <div key={actor}>
+                      <div className="text-black-50 pb-1">
+                        <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
+                        {actor}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
