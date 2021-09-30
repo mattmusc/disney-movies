@@ -2,11 +2,41 @@ import {faAngleRight, faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-ic
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {format, parse} from 'date-fns';
 import {useGetMovieQuery} from 'features/movie-detail/api';
+import {Movie} from 'features/types';
 import React from 'react';
 import {Link, useParams} from 'react-router-dom';
 
+
 const getYear = (x: string | null): string | null =>
   x && format(parse(x, 'yyyy-mm-dd', new Date()), 'yyyy');
+
+const formatDate = (x: string | null): string | null =>
+  x && format(parse(x, 'yyyy-mm-dd', new Date()), 'dd/mm/yyyy');
+
+
+type MovieKey = keyof Movie;
+type MovieDetailType = {
+  key: MovieKey,
+  label: string,
+};
+
+const details: MovieDetailType[] = [
+  {key: 'releaseDate', label: 'Release date'},
+  {key: 'boxOffice', label: 'Box office'},
+  {key: 'budget', label: 'Budget'},
+  {key: 'runningTime', label: 'Running Time'},
+];
+
+const formatDetail = (
+  d: Date | string | string[] | number | null | undefined,
+  k: MovieKey
+): string | null => {
+  if (k === 'releaseDate') {
+    return formatDate(d as string);
+  }
+  return d == null ? '-' : `${d}`;
+};
+
 
 export const MovieDetail = () => {
   const {id} = useParams<{ id: string | undefined }>();
@@ -42,6 +72,18 @@ export const MovieDetail = () => {
             </div>
             <div className="card-body">
               {!data && 'Loading...'}
+              {data && details.map(d => (
+                <div key={d.key}>
+                  <div className="row pt-1 pb-1">
+                    <div className="col-9 text-black-50">
+                      {d.label}:
+                    </div>
+                    <div className="col-3" style={{textAlign: 'right'}}>
+                      {formatDetail(data[d.key], d.key)}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
