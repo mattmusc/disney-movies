@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "Academy Award Review of",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["May 19, 1937"],
       "runningTimeString": "41 minutes (74 minutes 1966 release)",
       "country": "United States",
@@ -40,7 +40,7 @@
     {
       "id": 1,
       "title": "Snow White and the Seven Dwarfs",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 21, 1937 ( Carthay Circle Theatre )"],
       "runningTimeString": "83 minutes",
       "country": "United States",
@@ -77,7 +77,7 @@
     {
       "id": 2,
       "title": "Pinocchio",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 7, 1940 ( Center Theatre )", "February 23, 1940 (United States)"],
       "runningTimeString": "88 minutes",
       "country": "United States",
@@ -114,7 +114,7 @@
     {
       "id": 3,
       "title": "Fantasia",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 13, 1940"],
       "runningTimeString": "126 minutes",
       "country": "United States",
@@ -151,7 +151,7 @@
     {
       "id": 4,
       "title": "The Reluctant Dragon",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 27, 1941"],
       "runningTimeString": "74 minutes",
       "country": "United States",
@@ -188,7 +188,7 @@
     {
       "id": 5,
       "title": "Dumbo",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 23, 1941 (New York City)", "October 31, 1941 (U.S.)"],
       "runningTimeString": "64 minutes",
       "country": "United States",
@@ -225,7 +225,7 @@
     {
       "id": 6,
       "title": "Bambi",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 9, 1942 (World Premiere \u2013 London)", "August 13, 1942 (Premiere \u2013 New York City)", "August 21, 1942 (U.S.)"],
       "runningTimeString": "70 minutes",
       "country": "United States",
@@ -262,7 +262,7 @@
     {
       "id": 7,
       "title": "Saludos Amigos",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 24, 1942 (World Premiere \u2013 Rio de Janeiro)", "February 6, 1943 (U.S. Premiere \u2013 Boston)", "February 19, 1943 (U.S.)"],
       "runningTimeString": "42 minutes",
       "country": "United States",
@@ -299,7 +299,7 @@
     {
       "id": 8,
       "title": "Victory Through Air Power",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 17, 1943"],
       "runningTimeString": "70 min",
       "country": "United States",
@@ -336,7 +336,7 @@
     {
       "id": 9,
       "title": "The Three Caballeros",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 21, 1944 (Mexico City)", "February 3, 1945 (US)"],
       "runningTimeString": "71 minutes",
       "country": "United States",
@@ -373,7 +373,7 @@
     {
       "id": 10,
       "title": "Make Mine Music",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["April 20, 1946 (New York City premiere)", "August 15, 1946 (U.S.)"],
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -410,7 +410,7 @@
     {
       "id": 11,
       "title": "Song of the South",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 12, 1946 (Premiere: Atlanta, Georgia)", "November 20, 1946", "March 30, 1947 (Stanford Theatre, Palo Alto, California)"],
       "runningTimeString": "94 minutes",
       "country": "United States",
@@ -447,7 +447,7 @@
     {
       "id": 12,
       "title": "Fun and Fancy Free",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["September 27, 1947"],
       "runningTimeString": "73 minutes",
       "country": "United States",
@@ -484,7 +484,7 @@
     {
       "id": 13,
       "title": "Melody Time",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "May 27, 1948",
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -521,7 +521,7 @@
     {
       "id": 14,
       "title": "So Dear to My Heart",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 29, 1948 (Chicago, Illinois)", "January 19, 1949 (Indianapolis, Indiana)"],
       "runningTimeString": "82 minutes",
       "country": "United States",
@@ -558,7 +558,7 @@
     {
       "id": 15,
       "title": "The Adventures of Ichabod and Mr. Toad",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 5, 1949"],
       "runningTimeString": "68 minutes",
       "country": "United States",
@@ -595,7 +595,7 @@
     {
       "id": 16,
       "title": "Cinderella",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 15, 1950 (Boston)", "March 4, 1950 (United States)"],
       "runningTimeString": "74 minutes",
       "country": "United States",
@@ -632,7 +632,7 @@
     {
       "id": 17,
       "title": "Treasure Island",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 22, 1950 (World Premiere- London )", "July 29, 1950 ( US )"],
       "runningTimeString": "96 minutes",
       "country": null,
@@ -669,7 +669,7 @@
     {
       "id": 18,
       "title": "Alice in Wonderland",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 26, 1951 (London, premiere)", "July 28, 1951 (New York City, premiere)"],
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -731,7 +731,7 @@
       "languages": null,
       "screenplayBy": null,
       "countries": ["United States", "United Kingdom"],
-      "productionCompanies": ["Walt Disney Pictures", "RKO Radio Pictures, Inc."],
+      "productionCompanies": ["Walt Disney Productions", "RKO Radio Pictures, Inc."],
       "colorProcess": null,
       "japanese": null,
       "hepburn": null,
@@ -743,7 +743,7 @@
     {
       "id": 20,
       "title": "Peter Pan",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 5, 1953 (United States)"],
       "runningTimeString": "77 minutes",
       "country": "United States",
@@ -780,7 +780,7 @@
     {
       "id": 21,
       "title": "The Sword and the Rose",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 23, 1953 ('US )"],
       "runningTimeString": "92 minutes",
       "country": null,
@@ -817,7 +817,7 @@
     {
       "id": 22,
       "title": "The Living Desert",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 10, 1953"],
       "runningTimeString": "69 minutes",
       "country": "United States",
@@ -854,7 +854,7 @@
     {
       "id": 23,
       "title": "Rob Roy: The Highland Rogue",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["26 October 1953 (Premiere- London )", "27 February 1954 ( US )"],
       "runningTimeString": "81 minutes",
       "country": null,
@@ -891,7 +891,7 @@
     {
       "id": 24,
       "title": "The Vanishing Prairie",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 17, 1954"],
       "runningTimeString": ["60 minutes (VHS version)", "71 minutes (original)"],
       "country": "United States",
@@ -928,7 +928,7 @@
     {
       "id": 25,
       "title": "20,000 Leagues Under the Sea",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 23, 1954"],
       "runningTimeString": "127 minutes",
       "country": "United States",
@@ -965,7 +965,7 @@
     {
       "id": 26,
       "title": "Davy Crockett: King of the Wild Frontier",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "May 25, 1955",
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -1002,7 +1002,7 @@
     {
       "id": 27,
       "title": "Lady and the Tramp",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 22, 1955"],
       "runningTimeString": "76 minutes",
       "country": "United States",
@@ -1039,7 +1039,7 @@
     {
       "id": 28,
       "title": "The African Lion",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["September 14, 1955"],
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -1076,7 +1076,7 @@
     {
       "id": 29,
       "title": "The Littlest Outlaw",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "December 22, 1955",
       "runningTimeString": "73 minutes",
       "country": null,
@@ -1113,7 +1113,7 @@
     {
       "id": 30,
       "title": "The Great Locomotive Chase",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "June 8, 1956",
       "runningTimeString": "85 minutes",
       "country": "United States",
@@ -1150,7 +1150,7 @@
     {
       "id": 31,
       "title": "Davy Crockett and the River Pirates",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "July 18, 1956",
       "runningTimeString": "81 minutes",
       "country": "United States",
@@ -1187,7 +1187,7 @@
     {
       "id": 32,
       "title": "Secrets of Life",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["September 4, 1956"],
       "runningTimeString": "70 minutes",
       "country": "United States",
@@ -1224,7 +1224,7 @@
     {
       "id": 33,
       "title": "Westward Ho the Wagons!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 20, 1956"],
       "runningTimeString": "90 min.",
       "country": "United States",
@@ -1261,7 +1261,7 @@
     {
       "id": 34,
       "title": "Johnny Tremain",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "June 19, 1957",
       "runningTimeString": "80 minutes",
       "country": "United States",
@@ -1298,7 +1298,7 @@
     {
       "id": 35,
       "title": "Perri",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "August 28, 1957",
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -1335,7 +1335,7 @@
     {
       "id": 36,
       "title": "Old Yeller",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 25, 1957"],
       "runningTimeString": "83 minutes",
       "country": "United States",
@@ -1372,7 +1372,7 @@
     {
       "id": 37,
       "title": "The Light in the Forest",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 8, 1958"],
       "runningTimeString": "83 minutes",
       "country": "United States",
@@ -1409,7 +1409,7 @@
     {
       "id": 38,
       "title": "White Wilderness",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 12, 1958"],
       "runningTimeString": "72 minutes",
       "country": null,
@@ -1446,7 +1446,7 @@
     {
       "id": 39,
       "title": "Tonka",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 25, 1958"],
       "runningTimeString": "97 minutes",
       "country": "United States",
@@ -1483,7 +1483,7 @@
     {
       "id": 40,
       "title": "Sleeping Beauty",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["January 29, 1959"],
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -1520,7 +1520,7 @@
     {
       "id": 41,
       "title": "The Shaggy Dog",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 19, 1959"],
       "runningTimeString": "104 minutes",
       "country": "United States",
@@ -1557,7 +1557,7 @@
     {
       "id": 42,
       "title": "Darby O'Gill and the Little People",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 24, 1959 (Dublin)", "June 26, 1959 (Los Angeles)"],
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -1594,7 +1594,7 @@
     {
       "id": 43,
       "title": "Third Man on the Mountain",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 10, 1959"],
       "runningTimeString": "105 minutes",
       "country": "United States",
@@ -1631,7 +1631,7 @@
     {
       "id": 44,
       "title": "Toby Tyler or 10 Weeks with a Circus",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "January 21, 1960 ( Sarasota, FL )",
       "runningTimeString": "95 minutes",
       "country": "United States",
@@ -1668,7 +1668,7 @@
     {
       "id": 45,
       "title": "Kidnapped",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 24, 1960"],
       "runningTimeString": "97 minutes",
       "country": "United States",
@@ -1705,7 +1705,7 @@
     {
       "id": 46,
       "title": "Pollyanna",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "May 19, 1960",
       "runningTimeString": "134 minutes",
       "country": "United States",
@@ -1742,7 +1742,7 @@
     {
       "id": 47,
       "title": "Jungle Cat",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 1960 ( Berlin )", "August 10, 1960 (US)"],
       "runningTimeString": "69 minutes",
       "country": "United States",
@@ -1779,7 +1779,7 @@
     {
       "id": 48,
       "title": "Ten Who Dared",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 1, 1960"],
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -1816,7 +1816,7 @@
     {
       "id": 49,
       "title": "Swiss Family Robinson",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 21, 1960"],
       "runningTimeString": "131 minutes",
       "country": "United States",
@@ -1853,7 +1853,7 @@
     {
       "id": 50,
       "title": "One Hundred and One Dalmatians",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["January 25, 1961"],
       "runningTimeString": "79 minutes",
       "country": "United States",
@@ -1890,7 +1890,7 @@
     {
       "id": 51,
       "title": "The Absent-Minded Professor",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "March 16, 1961",
       "runningTimeString": "97 minutes",
       "country": "United States",
@@ -1927,7 +1927,7 @@
     {
       "id": 52,
       "title": "The Parent Trap",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 21, 1961"],
       "runningTimeString": "128 minutes",
       "country": "United States",
@@ -1964,7 +1964,7 @@
     {
       "id": 53,
       "title": "Nikki: Wild Dog of the North",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 12, 1961"],
       "runningTimeString": "74 minutes",
       "country": "United States",
@@ -2001,7 +2001,7 @@
     {
       "id": 54,
       "title": "Greyfriars Bobby",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 17, 1961"],
       "runningTimeString": "91 minutes",
       "country": "United States",
@@ -2038,7 +2038,7 @@
     {
       "id": 55,
       "title": "Babes in Toyland",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 14, 1961"],
       "runningTimeString": "105 minutes",
       "country": "United States",
@@ -2075,7 +2075,7 @@
     {
       "id": 56,
       "title": "Moon Pilot",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "April 5, 1962",
       "runningTimeString": "98 minutes",
       "country": "United States",
@@ -2112,7 +2112,7 @@
     {
       "id": 57,
       "title": "Bon Voyage!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["May 17, 1962"],
       "runningTimeString": "130 minutes",
       "country": "United States",
@@ -2149,7 +2149,7 @@
     {
       "id": 58,
       "title": "Big Red",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 6, 1962"],
       "runningTimeString": "89 min.",
       "country": "United States",
@@ -2186,7 +2186,7 @@
     {
       "id": 59,
       "title": "Almost Angels",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "September 26, 1962",
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -2223,7 +2223,7 @@
     {
       "id": 60,
       "title": "The Legend of Lobo",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 7, 1962 (Los Angeles)"],
       "runningTimeString": "67 minutes",
       "country": "United States",
@@ -2260,7 +2260,7 @@
     {
       "id": 61,
       "title": "In Search of the Castaways",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 14, 1962 (London, premiere)", "December 19, 1962 (US)"],
       "runningTimeString": "98 minutes",
       "country": "United States",
@@ -2297,7 +2297,7 @@
     {
       "id": 62,
       "title": "Son of Flubber",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["January 16, 1963"],
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -2334,7 +2334,7 @@
     {
       "id": 63,
       "title": "Miracle of the White Stallions",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 29, 1963 (U.S.)"],
       "runningTimeString": "118 minutes",
       "country": "United States",
@@ -2371,7 +2371,7 @@
     {
       "id": 64,
       "title": "Savage Sam",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 1, 1963"],
       "runningTimeString": "103 Minutes",
       "country": "United States",
@@ -2408,7 +2408,7 @@
     {
       "id": 65,
       "title": "Summer Magic",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 7, 1963"],
       "runningTimeString": "110 minutes",
       "country": "United States",
@@ -2445,7 +2445,7 @@
     {
       "id": 66,
       "title": "The Incredible Journey",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "November 20, 1963",
       "runningTimeString": "80 min.",
       "country": null,
@@ -2482,7 +2482,7 @@
     {
       "id": 67,
       "title": "The Sword in the Stone",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 25, 1963"],
       "runningTimeString": "79 minutes",
       "country": "United States",
@@ -2519,7 +2519,7 @@
     {
       "id": 68,
       "title": "A Tiger Walks",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 12, 1964"],
       "runningTimeString": "91 minutes",
       "country": "United States",
@@ -2556,7 +2556,7 @@
     {
       "id": 69,
       "title": "The Misadventures of Merlin Jones",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 11, 1964 (Los Angeles)"],
       "runningTimeString": "91 minutes",
       "country": "United States",
@@ -2593,7 +2593,7 @@
     {
       "id": 70,
       "title": "The Three Lives of Thomasina",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["11 December 1963 ( New York City )", "4 June 1964 (U.S.)"],
       "runningTimeString": "97 minutes",
       "country": null,
@@ -2630,7 +2630,7 @@
     {
       "id": 71,
       "title": "The Moon-Spinners",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 2, 1964"],
       "runningTimeString": "118 minutes",
       "country": null,
@@ -2667,7 +2667,7 @@
     {
       "id": 72,
       "title": "Mary Poppins",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 27, 1964 (LA)", "September 24, 1964 (NY)"],
       "runningTimeString": "139 minutes",
       "country": "United States",
@@ -2704,7 +2704,7 @@
     {
       "id": 73,
       "title": "Emil and the Detectives",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 18, 1964"],
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -2741,7 +2741,7 @@
     {
       "id": 74,
       "title": "Those Calloways",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["January 28, 1965", "(", "Atlanta, Georgia", "Premiere)"],
       "runningTimeString": "131 mins.",
       "country": "United States",
@@ -2778,7 +2778,7 @@
     {
       "id": 75,
       "title": "The Monkey's Uncle",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 18, 1965 (Los Angeles)"],
       "runningTimeString": "87 minutes",
       "country": "United States",
@@ -2815,7 +2815,7 @@
     {
       "id": 76,
       "title": "That Darn Cat!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 2, 1965"],
       "runningTimeString": "116 minutes",
       "country": "United States",
@@ -2852,7 +2852,7 @@
     {
       "id": 77,
       "title": "The Ugly Dachshund",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 4, 1966 (premiere)", "February 16, 1966"],
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -2889,7 +2889,7 @@
     {
       "id": 78,
       "title": "Lt. Robin Crusoe, U.S.N.",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 25, 1966 (San Diego)", "June 29, 1966 (U.S.)"],
       "runningTimeString": "110 min.",
       "country": "United States",
@@ -2926,7 +2926,7 @@
     {
       "id": 79,
       "title": "The Fighting Prince of Donegal",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "October 1, 1966",
       "runningTimeString": "110 min.",
       "country": null,
@@ -2963,7 +2963,7 @@
     {
       "id": 80,
       "title": "Follow Me, Boys!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 1, 1966"],
       "runningTimeString": "131 minutes",
       "country": "United States",
@@ -3000,7 +3000,7 @@
     {
       "id": 81,
       "title": "Monkeys, Go Home!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 8, 1967 (San Francisco)"],
       "runningTimeString": "101 minutes",
       "country": "United States",
@@ -3037,7 +3037,7 @@
     {
       "id": 82,
       "title": "The Adventures of Bullwhip Griffin",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 15, 1967 (uk)"],
       "runningTimeString": "108 minutes",
       "country": "United States",
@@ -3074,7 +3074,7 @@
     {
       "id": 83,
       "title": "The Gnome-Mobile",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 12, 1967"],
       "runningTimeString": "84 minutes",
       "country": "United States",
@@ -3111,7 +3111,7 @@
     {
       "id": 84,
       "title": "The Jungle Book",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 18, 1967"],
       "runningTimeString": "78 minutes",
       "country": "United States",
@@ -3148,7 +3148,7 @@
     {
       "id": 85,
       "title": "Charlie, the Lonesome Cougar",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 19, 1967"],
       "runningTimeString": "75 minutes",
       "country": "United States",
@@ -3185,7 +3185,7 @@
     {
       "id": 86,
       "title": "The Happiest Millionaire",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 23, 1967", "November 30, 1967"],
       "runningTimeString": ["164 minutes", "(", "Los Angeles", "premiere)", "144 minutes", "(", "New York City", "premiere)", "118 minutes", "(General release)", "172 minutes", "(", "Director's cut", ")"],
       "country": "United States",
@@ -3222,7 +3222,7 @@
     {
       "id": 87,
       "title": "Blackbeard's Ghost",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 8, 1968"],
       "runningTimeString": "106 minutes",
       "country": "United States",
@@ -3259,7 +3259,7 @@
     {
       "id": 88,
       "title": "The One and Only, Genuine, Original Family Band",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 21, 1968 ( Radio City Music Hall )"],
       "runningTimeString": "110 minutes",
       "country": "United States",
@@ -3296,7 +3296,7 @@
     {
       "id": 89,
       "title": "Never a Dull Moment",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 26, 1968"],
       "runningTimeString": "99 minutes",
       "country": "United States",
@@ -3333,7 +3333,7 @@
     {
       "id": 90,
       "title": "The Horse in the Gray Flannel Suit",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 3, 1968"],
       "runningTimeString": "113 mins.",
       "country": "United States",
@@ -3370,7 +3370,7 @@
     {
       "id": 91,
       "title": "The Love Bug",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 24, 1968 (limited)", "March 13, 1969 (wide)"],
       "runningTimeString": "108 minutes",
       "country": "United States",
@@ -3407,7 +3407,7 @@
     {
       "id": 92,
       "title": "Smith!",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["May 9, 1969"],
       "runningTimeString": "112 minutes",
       "country": "United States",
@@ -3444,7 +3444,7 @@
     {
       "id": 93,
       "title": "Rascal",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "September 4, 1969",
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -3481,7 +3481,7 @@
     {
       "id": 94,
       "title": "The Computer Wore Tennis Shoes",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 28, 1969"],
       "runningTimeString": "91 minutes",
       "country": "United States",
@@ -3518,7 +3518,7 @@
     {
       "id": 95,
       "title": "King of the Grizzlies",
-      "productionCompany": "Walt Disney Pictures Robert Lawrence Productions",
+      "productionCompany": "Walt Disney Productions Robert Lawrence Productions",
       "releaseDateString": ["February 11, 1970"],
       "runningTimeString": "93 minutes",
       "country": null,
@@ -3555,7 +3555,7 @@
     {
       "id": 96,
       "title": "The Boatniks",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "July 1, 1970",
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -3592,7 +3592,7 @@
     {
       "id": 97,
       "title": "The Wild Country",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 15, 1970 (original release)", "January 20, 1971"],
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -3629,7 +3629,7 @@
     {
       "id": 98,
       "title": "The Aristocats",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 11, 1970 (premiere)", "December 24, 1970 (United States)"],
       "runningTimeString": "79 minutes",
       "country": "United States",
@@ -3666,7 +3666,7 @@
     {
       "id": 99,
       "title": "The Barefoot Executive",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "March 17, 1971",
       "runningTimeString": "96 minutes",
       "country": "United States",
@@ -3703,7 +3703,7 @@
     {
       "id": 100,
       "title": "Scandalous John",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "June 22, 1971",
       "runningTimeString": "113 minutes",
       "country": "United States",
@@ -3740,7 +3740,7 @@
     {
       "id": 101,
       "title": "The Million Dollar Duck",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 30, 1971"],
       "runningTimeString": "89 minutes",
       "country": "United States",
@@ -3777,7 +3777,7 @@
     {
       "id": 102,
       "title": "Bedknobs and Broomsticks",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 7, 1971 (United Kingdom)", "December 13, 1971 (United States)"],
       "runningTimeString": ["118 minutes (1971 original version)", "139 minutes (1996 reconstruction version)"],
       "country": "United States",
@@ -3814,7 +3814,7 @@
     {
       "id": 103,
       "title": "The Biscuit Eater",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 22, 1972 (US)"],
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -3851,7 +3851,7 @@
     {
       "id": 104,
       "title": "Now You See Him, Now You Don't",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "July 12, 1972",
       "runningTimeString": "88 minutes",
       "country": "United States",
@@ -3888,7 +3888,7 @@
     {
       "id": 105,
       "title": "Napoleon and Samantha",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 5, 1972"],
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -3925,7 +3925,7 @@
     {
       "id": 106,
       "title": "Run, Cougar, Run",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 18, 1972"],
       "runningTimeString": "87 minutes",
       "country": "United States",
@@ -3962,7 +3962,7 @@
     {
       "id": 107,
       "title": "Snowball Express",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 22, 1972"],
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -3999,7 +3999,7 @@
     {
       "id": 108,
       "title": "The World's Greatest Athlete",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "February 1, 1973",
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -4036,7 +4036,7 @@
     {
       "id": 109,
       "title": "Charley and the Angel",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 23, 1973"],
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -4073,7 +4073,7 @@
     {
       "id": 110,
       "title": "One Little Indian",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 20, 1973"],
       "runningTimeString": "90 Minutes",
       "country": "United States",
@@ -4110,7 +4110,7 @@
     {
       "id": 111,
       "title": "Robin Hood",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 8, 1973"],
       "runningTimeString": "83 minutes",
       "country": "United States",
@@ -4147,7 +4147,7 @@
     {
       "id": 112,
       "title": "Superdad",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 14, 1973"],
       "runningTimeString": "96 minutes",
       "country": "United States",
@@ -4184,7 +4184,7 @@
     {
       "id": 113,
       "title": "Herbie Rides Again",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 6, 1974"],
       "runningTimeString": "88 minutes",
       "country": "United States",
@@ -4221,7 +4221,7 @@
     {
       "id": 114,
       "title": "The Bears and I",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 31, 1974"],
       "runningTimeString": "89 minutes",
       "country": "United States",
@@ -4258,7 +4258,7 @@
     {
       "id": 115,
       "title": "The Castaway Cowboy",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 1, 1974"],
       "runningTimeString": "91 minutes",
       "country": "United States",
@@ -4295,7 +4295,7 @@
     {
       "id": 116,
       "title": "The Island at the Top of the World",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "December 20, 1974 (with Winnie the Pooh and Tigger Too )",
       "runningTimeString": "93 minutes",
       "country": "United States",
@@ -4332,7 +4332,7 @@
     {
       "id": 117,
       "title": "The Strongest Man in the World",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 6, 1975"],
       "runningTimeString": "92 minutes",
       "country": "United States",
@@ -4369,7 +4369,7 @@
     {
       "id": 118,
       "title": "Escape to Witch Mountain",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 21, 1975 (U.S.)"],
       "runningTimeString": "97 min.",
       "country": "United States",
@@ -4406,7 +4406,7 @@
     {
       "id": 119,
       "title": "The Apple Dumpling Gang",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 1, 1975"],
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -4443,7 +4443,7 @@
     {
       "id": 120,
       "title": "One of Our Dinosaurs is Missing",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 9, 1975"],
       "runningTimeString": "100 minutes",
       "country": null,
@@ -4480,7 +4480,7 @@
     {
       "id": 121,
       "title": "The Best of Walt Disney's True-Life Adventures",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["October 8, 1975"],
       "runningTimeString": "89 minutes",
       "country": "United States",
@@ -4517,7 +4517,7 @@
     {
       "id": 122,
       "title": "Ride a Wild Pony",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "December 25, 1975",
       "runningTimeString": "91 minutes",
       "country": null,
@@ -4554,7 +4554,7 @@
     {
       "id": 123,
       "title": "No Deposit, No Return",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 11, 1976 (Los Angeles)"],
       "runningTimeString": "112 minutes",
       "country": "United States",
@@ -4591,7 +4591,7 @@
     {
       "id": 124,
       "title": "Treasure of Matecumbe",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 1, 1976"],
       "runningTimeString": "115 minutes",
       "country": "United States",
@@ -4628,7 +4628,7 @@
     {
       "id": 125,
       "title": "Gus",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 7, 1976"],
       "runningTimeString": "95 minutes",
       "country": "United States",
@@ -4665,7 +4665,7 @@
     {
       "id": 126,
       "title": "The Shaggy D.A.",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 16, 1976"],
       "runningTimeString": "91 min.",
       "country": "United States",
@@ -4702,7 +4702,7 @@
     {
       "id": 127,
       "title": "Freaky Friday: The Movie",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 17, 1976"],
       "runningTimeString": "95 minutes",
       "country": "United States",
@@ -4739,7 +4739,7 @@
     {
       "id": 128,
       "title": "Escape from the Dark",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["May 26, 1976", "(UK)", "March 11, 1977", "(US)"],
       "runningTimeString": "104 minutes",
       "country": null,
@@ -4776,7 +4776,7 @@
     {
       "id": 129,
       "title": "The Many Adventures of",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 11, 1977"],
       "runningTimeString": "74 minutes",
       "country": "United States",
@@ -4813,7 +4813,7 @@
     {
       "id": 130,
       "title": "A Tale of Two Critters",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 20, 1977"],
       "runningTimeString": "48 minutes",
       "country": "United States",
@@ -4850,7 +4850,7 @@
     {
       "id": 131,
       "title": "The Rescuers",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 22, 1977"],
       "runningTimeString": "77 minutes",
       "country": "United States",
@@ -4887,7 +4887,7 @@
     {
       "id": 132,
       "title": "Herbie Goes to Monte Carlo",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 24, 1977"],
       "runningTimeString": "104 minutes",
       "country": "United States",
@@ -4924,7 +4924,7 @@
     {
       "id": 133,
       "title": "Pete's Dragon",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["November 3, 1977"],
       "runningTimeString": "128 minutes",
       "country": "United States",
@@ -4961,7 +4961,7 @@
     {
       "id": 134,
       "title": "Candleshoe",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "December 16, 1977",
       "runningTimeString": "101 minutes",
       "country": "United States",
@@ -4998,7 +4998,7 @@
     {
       "id": 135,
       "title": "Return from Witch Mountain",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 10, 1978"],
       "runningTimeString": "94 minutes",
       "country": "United States",
@@ -5035,7 +5035,7 @@
     {
       "id": 136,
       "title": "The Cat from Outer Space",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 30, 1978 (New York)"],
       "runningTimeString": "104 minutes",
       "country": "United States",
@@ -5072,7 +5072,7 @@
     {
       "id": 137,
       "title": "Hot Lead and Cold Feet",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "July 5, 1978",
       "runningTimeString": "90 minutes",
       "country": "United States",
@@ -5109,7 +5109,7 @@
     {
       "id": 138,
       "title": "The North Avenue Irregulars",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "February 9, 1979",
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -5146,7 +5146,7 @@
     {
       "id": 139,
       "title": "The Apple Dumpling Gang Rides Again",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 27, 1979"],
       "runningTimeString": "88 minutes",
       "country": "United States",
@@ -5183,7 +5183,7 @@
     {
       "id": 140,
       "title": "Unidentified Flying Oddball",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 19, 1979 (London)", "August 3, 1979 (Los Angeles)"],
       "runningTimeString": "93 minutes",
       "country": null,
@@ -5220,7 +5220,7 @@
     {
       "id": 141,
       "title": "The Black Hole",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["December 18, 1979 (United Kingdom)", "December 21, 1979 (United States)"],
       "runningTimeString": "98 minutes",
       "country": "United States",
@@ -5257,7 +5257,7 @@
     {
       "id": 142,
       "title": "Midnight Madness",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["February 8, 1980"],
       "runningTimeString": "112 minutes",
       "country": "United States",
@@ -5294,7 +5294,7 @@
     {
       "id": 143,
       "title": "The Watcher in the Woods",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["April 17, 1980 (New York City)", "October 9, 1981 (U.S.)"],
       "runningTimeString": "84 minutes",
       "country": "United States",
@@ -5331,7 +5331,7 @@
     {
       "id": 144,
       "title": "Herbie Goes Bananas",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["June 27, 1980"],
       "runningTimeString": "98 minutes",
       "country": "United States",
@@ -5368,7 +5368,7 @@
     {
       "id": 145,
       "title": "The Last Flight of Noah's Ark",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 9, 1980 (Los Angeles)"],
       "runningTimeString": "97 minutes",
       "country": "United States",
@@ -5430,7 +5430,7 @@
       "languages": null,
       "screenplayBy": "Jules Feiffer",
       "countries": null,
-      "productionCompanies": ["Paramount Pictures", "Walt Disney Pictures", "Robert Evans Productions"],
+      "productionCompanies": ["Paramount Pictures", "Walt Disney Productions", "Robert Evans Productions"],
       "colorProcess": null,
       "japanese": null,
       "hepburn": null,
@@ -5442,7 +5442,7 @@
     {
       "id": 147,
       "title": "The Devil and Max Devlin",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "February 11, 1981 (Los Angeles)",
       "runningTimeString": "96 minutes",
       "country": "United States",
@@ -5479,7 +5479,7 @@
     {
       "id": 148,
       "title": "Amy",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "March 20, 1981",
       "runningTimeString": "100 minutes",
       "country": "United States",
@@ -5541,7 +5541,7 @@
       "languages": null,
       "screenplayBy": null,
       "countries": null,
-      "productionCompanies": ["Paramount Pictures", "Walt Disney Pictures"],
+      "productionCompanies": ["Paramount Pictures", "Walt Disney Productions"],
       "colorProcess": null,
       "japanese": null,
       "hepburn": null,
@@ -5553,7 +5553,7 @@
     {
       "id": 150,
       "title": "The Fox and the Hound",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["July 10, 1981"],
       "runningTimeString": "83 minutes",
       "country": "United States",
@@ -5590,7 +5590,7 @@
     {
       "id": 151,
       "title": "Condorman",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["August 7, 1981"],
       "runningTimeString": "90 minutes",
       "country": "United States",
@@ -5627,7 +5627,7 @@
     {
       "id": 152,
       "title": "Night Crossing",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "February 5, 1982",
       "runningTimeString": "107 minutes",
       "country": null,
@@ -5689,7 +5689,7 @@
       "languages": null,
       "screenplayBy": "Steven Lisberger",
       "countries": null,
-      "productionCompanies": ["Walt Disney Pictures", "Lisberger-Kushner Productions"],
+      "productionCompanies": ["Walt Disney Productions", "Lisberger-Kushner Productions"],
       "colorProcess": null,
       "japanese": null,
       "hepburn": null,
@@ -5701,7 +5701,7 @@
     {
       "id": 154,
       "title": "Tex",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": "July 30, 1982",
       "runningTimeString": "103 minutes",
       "country": "United States",
@@ -5738,7 +5738,7 @@
     {
       "id": 155,
       "title": "Trenchcoat",
-      "productionCompany": "Walt Disney Pictures",
+      "productionCompany": "Walt Disney Productions",
       "releaseDateString": ["March 11, 1983"],
       "runningTimeString": "91 min",
       "country": "United States",
@@ -5800,7 +5800,7 @@
       "languages": null,
       "screenplayBy": null,
       "countries": null,
-      "productionCompanies": ["Walt Disney Pictures", "The Bryna Company"],
+      "productionCompanies": ["Walt Disney Productions", "The Bryna Company"],
       "colorProcess": null,
       "japanese": null,
       "hepburn": null,
