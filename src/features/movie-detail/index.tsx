@@ -1,5 +1,6 @@
 import {faAngleRight, faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {formatAsCurrency} from 'core/utils';
 import {format, parse} from 'date-fns';
 import {useGetMovieQuery} from 'features/movie-detail/api';
 import {Movie} from 'features/types';
@@ -33,6 +34,12 @@ const formatDetail = (
 ): string | null => {
   if (k === 'releaseDate') {
     return formatDate(d as string);
+  }
+  if (['boxOffice', 'budget'].includes(k)) {
+    if (!d || d === '0' || d === 0) {
+      return '-';
+    }
+    return formatAsCurrency(d as number);
   }
   return d == null ? '-' : `${d}`;
 };
@@ -74,8 +81,9 @@ export const MovieDetail = () => {
               {!data && 'Loading...'}
               {data && details.map(d => (
                 <div key={d.key}>
-                  <div className="row pt-1 pb-1">
+                  <div className="row pb-1">
                     <div className="col-9 text-black-50">
+                      <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                       {d.label}:
                     </div>
                     <div className="col-3" style={{textAlign: 'right'}}>
@@ -97,7 +105,7 @@ export const MovieDetail = () => {
               {!data && 'Loading...'}
               {data && data.starring?.map(actor => (
                 <div key={actor}>
-                  <div className="text-black-50">
+                  <div className="text-black-50 pb-1">
                     <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                     {actor}
                   </div>
