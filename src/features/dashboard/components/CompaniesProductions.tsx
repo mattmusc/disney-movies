@@ -1,14 +1,9 @@
-import {Dropdown} from 'core/components/dropdown';
 import {useFrequency} from 'core/hooks';
 import {format} from 'date-fns';
 import {useGetMoviesQuery} from 'features/dashboard/api';
 import React from 'react';
 
-const nLatestOptions = [3, 5, 10]
-
 export const CompaniesByProductions = () => {
-  const [nLatest, setNLatest] = React.useState(5);
-
   const {data = [], isLoading} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
@@ -19,8 +14,7 @@ export const CompaniesByProductions = () => {
 
       <div className="card-header">
         <div className="d-flex justify-content-between">
-          <h5>Top {nLatest} Production Companies ({currentYear})</h5>
-          <Dropdown options={nLatestOptions} value={nLatest} setValue={setNLatest}/>
+          <h5>Top Production Companies ({currentYear})</h5>
         </div>
       </div>
 
