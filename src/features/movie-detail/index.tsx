@@ -55,15 +55,15 @@ export const MovieDetail = () => {
 
         <hr/>
 
-        <div className="col-4 mt-4">
+        <div className="col-4 mt-2">
           <GeneralInformation movieData={data}/>
         </div>
 
-        <div className="col-4 mt-4">
+        <div className="col-4 mt-2">
           <StarringList movieData={data}/>
         </div>
 
-        <div className="col-4 mt-4 d-flex justify-content-center align-items-center">
+        <div className="col-4 mt-2 d-flex justify-content-center align-items-center">
           {imageLoading && (
             <>
               <Spinner/>
