@@ -36,7 +36,7 @@ export const MovieDetail = () => {
   }, [imageSource]);
 
   return (
-    <div className="container-fluid pt-4 pb-4">
+    <div className="container-fluid pt-2 pb-4">
       <div className="row">
 
         <div className="col-12 d-flex align-items-center justify-content-between">
