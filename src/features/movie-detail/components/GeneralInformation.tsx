@@ -21,6 +21,7 @@ const details: MovieDetailType[] = [
   {key: 'boxOffice', label: 'Box office'},
   {key: 'budget', label: 'Budget'},
   {key: 'runningTime', label: 'Running Time'},
+  {key: 'language', label: 'Language'},
 ];
 
 
@@ -47,7 +48,7 @@ const formatDetail = (
 
 export const GeneralInformation = ({movieData}: GeneralInformationProps) => {
   return (
-    <div className="card mh-100 shadow-sm rounded">
+    <div className="card mh-100 shadow rounded">
       <div className="card-header">
         <h5>General Infomation</h5>
       </div>

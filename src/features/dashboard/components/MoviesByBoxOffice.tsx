@@ -52,7 +52,7 @@ export const MoviesByBoxOffice = () => {
       .reduce(createTree, []);
 
     return (
-      <div className="card h-100">
+      <div className="card h-100 shadow rounded">
 
         <div className="card-header">
           <div className="d-flex justify-content-between align-baseline">

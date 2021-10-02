@@ -1,3 +1,5 @@
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {format, isDate, parse} from 'date-fns';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -14,6 +16,7 @@ export function MovieWithDate({title, date, link}: MovieWithDateProps) {
   return (
     <div className="row pt-1 pb-1">
       <div className="col-9 text-black-50">
+        <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
         {link && <Link to={link}>{title}</Link>}
         {!link && title}
       </div>

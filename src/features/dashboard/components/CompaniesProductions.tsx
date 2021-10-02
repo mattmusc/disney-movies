@@ -1,3 +1,5 @@
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useFrequency} from 'core/hooks';
 import {format} from 'date-fns';
 import {useGetMoviesQuery} from 'features/dashboard/api';
@@ -10,7 +12,7 @@ export const CompaniesByProductions = () => {
   const {hist: companies} = useFrequency({data, k: 'productionCompany', limit: null});
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 shadow rounded">
 
       <div className="card-header">
         <div className="d-flex justify-content-between">
@@ -24,6 +26,7 @@ export const CompaniesByProductions = () => {
           <div key={x.name}>
             <div className="row pt-1 pb-1">
               <div className="col-9 text-black-50">
+                <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                 {x.name}
               </div>
               <div className="col-3" style={{textAlign: 'right'}}>

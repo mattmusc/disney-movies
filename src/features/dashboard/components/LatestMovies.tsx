@@ -16,7 +16,7 @@ export const LatestMovies = () => {
   const currentYear = format(new Date(), 'yyyy');
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 shadow rounded">
 
       <div className="card-header">
         <div className="d-flex justify-content-between">

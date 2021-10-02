@@ -1,3 +1,5 @@
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useGetMoviesQuery} from 'features/dashboard/api';
 import {Movie} from 'features/types';
 import React from 'react';
@@ -12,6 +14,7 @@ function MovieStat({title, value, percentage}: MovieStatProps) {
   return (
     <div className="row pt-1 pb-1">
       <div className="col-8 text-black-50">
+        <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
         {title}
       </div>
       <div className="col-2" style={{textAlign: 'right', paddingRight: 0, width: '21%'}}>
@@ -24,7 +27,7 @@ function MovieStat({title, value, percentage}: MovieStatProps) {
   );
 }
 
-export function BoxOfficeBudgetStats() {
+export function MovieStats() {
   const {data = []} = useGetMoviesQuery();
 
   // TODO: I guess here I might use React.memo
@@ -42,7 +45,7 @@ export function BoxOfficeBudgetStats() {
     : `${0}`;
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 shadow rounded">
 
       <div className="card-header">
         <h5>Box Office & Budget Stats</h5>

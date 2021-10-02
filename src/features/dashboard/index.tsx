@@ -1,5 +1,5 @@
 import {ActorsByAppearance} from 'features/dashboard/components/ActorsByAppearance';
-import {BoxOfficeBudgetStats} from 'features/dashboard/components/BoxOfficeBudgetStats';
+import {MovieStats} from 'features/dashboard/components/MovieStats';
 import {CompaniesByProductions} from 'features/dashboard/components/CompaniesProductions';
 import {LatestMovies} from 'features/dashboard/components/LatestMovies';
 import {MoviesByBoxOffice} from 'features/dashboard/components/MoviesByBoxOffice';
@@ -21,7 +21,7 @@ export const Dashboard = () => {
         </div>
 
         <div className="col-4">
-          <BoxOfficeBudgetStats/>
+          <MovieStats/>
         </div>
 
         <div className="col-12 mt-4">

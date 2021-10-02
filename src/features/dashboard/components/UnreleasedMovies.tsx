@@ -7,7 +7,7 @@ export const UnreleasedMovies = () => {
   const {data: unreleasedMovies = [], isLoading: unreleasedLoading} = useGetUnreleasedMoviesQuery();
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 shadow rounded">
       <div className="card-header">
         <h5>Unrealeased Movies</h5>
       </div>

@@ -1,3 +1,5 @@
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Dropdown} from 'core/components/dropdown';
 import {formatAsCurrency} from 'core/utils';
 import {format} from 'date-fns';
@@ -20,7 +22,7 @@ export const TopMovies = () => {
     .filter((m: Movie, idx: number) => idx <= nLatest)
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 shadow rounded">
 
       <div className="card-header">
         <div className="d-flex justify-content-between">
@@ -51,6 +53,7 @@ export const TopMovies = () => {
           <div key={m.id}>
             <div className="row pt-1 pb-1">
               <div className="col-9 text-black-50">
+                <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                 {m.title}
               </div>
               <div className="col-3" style={{textAlign: 'right'}}>
