@@ -6,6 +6,7 @@ import {format} from 'date-fns';
 import {useGetMoviesQuery} from 'features/dashboard/api';
 import {Movie} from 'features/types';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const nLatestOptions = [3, 5, 10]
 
@@ -54,7 +55,7 @@ export const TopMovies = () => {
             <div className="row pt-1 pb-1">
               <div className="col-9 text-black-50">
                 <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
-                {m.title}
+                <Link to={`/m/${m.id}`}>{m.title}</Link>
               </div>
               <div className="col-3" style={{textAlign: 'right'}}>
                 {formatAsCurrency(m.boxOffice)}
