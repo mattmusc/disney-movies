@@ -19,7 +19,7 @@ export const MoviesByBoxOfficeAndYear = () => {
     <div className="card h-100 shadow rounded">
 
       <div className="card-header">
-        <h5>Movies by Box Office & Budget</h5>
+        <h5>Movies by Release Date and Box Office</h5>
       </div>
 
       <div className="card-body">
