@@ -1,5 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {EmptyDiv} from 'core/components';
 import {Movie} from 'features/types';
 import React from 'react';
 
@@ -12,7 +13,6 @@ interface StarringListProps {
 export const StarringList = ({movieData}: StarringListProps) => {
   const colSize = 5;
   const starring = movieData?.starring || [];
-  const emptyDivs = [...Array(colSize - starring.slice(0, colSize).length)];
 
   return (
     <div className="card mh-100 shadow rounded">
@@ -31,8 +31,7 @@ export const StarringList = ({movieData}: StarringListProps) => {
                 </div>
               </div>
             ))}
-            {/* adds an empty div to match 5 div height */}
-            {emptyDivs.map(() => <div className="text-black-50 pb-1">&nbsp;</div>)}
+            <EmptyDiv cols={5} data={starring}/>
           </div>
           <div className="ms-5">
             {starring.slice(colSize).map(actor => (

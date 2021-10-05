@@ -1,5 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {EmptyDiv} from 'core/components';
 import {Movie} from 'features/types';
 import React from 'react';
 
@@ -29,7 +30,7 @@ export const WritersDirectors = ({movieData}: WritersDirectorsProps) => {
   return (
     <div className="card mh-100 shadow rounded">
       <div className="card-header">
-        <h5>Writers and Directors</h5>
+        <h5>Directors and Writers</h5>
       </div>
       <div className="card-body">
         {!movieData && 'Loading...'}
@@ -43,6 +44,7 @@ export const WritersDirectors = ({movieData}: WritersDirectorsProps) => {
                   {director}
                 </div>
               ))}
+              <EmptyDiv cols={4} data={directors}/>
             </div>
             <div className="col-6">
               <h6>Writers(s)</h6>
