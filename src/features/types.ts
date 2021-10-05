@@ -9,6 +9,7 @@ export interface Movie {
   boxOffice: number | undefined;
   budget: number | undefined;
   starring: string[] | null;
+  writtenBy: string[] | null;
   directedBy: string[] | null;
   musicBy: string | null;
   distributedBy: string | null;

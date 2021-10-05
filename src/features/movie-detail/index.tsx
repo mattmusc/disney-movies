@@ -1,24 +1,11 @@
+import {Spinner} from 'core/components';
 import {useGetMovieQuery} from 'features/movie-detail/api';
 import {GeneralInformation} from 'features/movie-detail/components/GeneralInformation';
 import {Header} from 'features/movie-detail/components/Header';
 import {StarringList} from 'features/movie-detail/components/StarringList';
+import {WritersDirectors} from 'features/movie-detail/components/WritersDirectors';
 import React from 'react';
 import {useParams} from 'react-router-dom';
-
-
-function Spinner() {
-  return (
-    <div
-      className="spinner-grow me-2 text-primary"
-      role="status"
-      style={{
-        width: '1rem',
-        height: '1rem',
-      }}>
-      <span className="visually-hidden">Loading...</span>
-    </div>
-  );
-}
 
 
 export const MovieDetail = () => {
@@ -77,6 +64,10 @@ export const MovieDetail = () => {
               alt="movie-cover" width="100px"
             />
           )}
+        </div>
+
+        <div className="col-4 mt-2">
+          <WritersDirectors movieData={data}/>
         </div>
 
       </div>
