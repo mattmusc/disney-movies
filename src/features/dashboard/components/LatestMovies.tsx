@@ -1,4 +1,4 @@
-import {MovieWithDate} from 'core/components';
+import {ErrorComponent, LoadingComponent, MovieWithDate} from 'core/components';
 import {Dropdown} from 'core/components/dropdown';
 import {format, startOfYear} from 'date-fns';
 import {Movie} from 'features/types';
@@ -9,7 +9,7 @@ const nLatestOptions = [3, 5, 10]
 
 export const LatestMovies = () => {
   const [nLatest, setNLatest] = React.useState(5);
-  const {data = [], isLoading} = useGetLatestMoviesQuery({
+  const {data = [], isLoading, isError} = useGetLatestMoviesQuery({
     n: nLatest,
     releaseDate: format(startOfYear(new Date()), 'yyyy-MM-dd')
   });
@@ -26,7 +26,9 @@ export const LatestMovies = () => {
       </div>
 
       <div className="card-body">
-        {isLoading && 'Loading'}
+        <LoadingComponent isLoading={isLoading}/>
+        <ErrorComponent isError={isError}/>
+
         {data.map((m: Movie) => (
           <div key={m.id}>
             <MovieWithDate

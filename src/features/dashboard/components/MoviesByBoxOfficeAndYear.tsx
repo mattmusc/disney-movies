@@ -1,3 +1,4 @@
+import {ErrorComponent, LoadingComponent} from 'core/components';
 import {ReactECharts} from 'core/components/charts/ReactECharts';
 import {formatAsCurrency} from 'core/utils';
 import {format, parse} from 'date-fns';
@@ -19,7 +20,7 @@ const tooltipFormatter = (params: TopLevelFormatterParams) => {
 
 
 export const MoviesByBoxOfficeAndYear = () => {
-  const {data = [], isLoading} = useGetMoviesQuery();
+  const {data = [], isLoading, isError} = useGetMoviesQuery();
 
   const movies = data
     .map(m => [
@@ -37,8 +38,10 @@ export const MoviesByBoxOfficeAndYear = () => {
       </div>
 
       <div className="card-body">
-        {isLoading && 'Loading...'}
-        {!isLoading && (
+        <LoadingComponent isLoading={isLoading}/>
+        <ErrorComponent isError={isError}/>
+
+        {!isLoading && !isError && (
           <ReactECharts style={{height: '350px'}} option={{
             grid: {},
             xAxis: {

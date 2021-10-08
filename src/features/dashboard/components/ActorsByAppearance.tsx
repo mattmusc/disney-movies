@@ -1,5 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {ErrorComponent, LoadingComponent} from 'core/components';
 import {Dropdown} from 'core/components/dropdown';
 import {useFrequency} from 'core/hooks';
 import {format} from 'date-fns';
@@ -11,7 +12,7 @@ const nLatestOptions = [3, 5, 10]
 export const ActorsByAppearance = () => {
   const [nLatest, setNLatest] = React.useState(5);
 
-  const {data = [], isLoading} = useGetMoviesQuery();
+  const {data = [], isLoading, isError} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
   const {hist: actors} = useFrequency({data, k: 'starring', limit: nLatest});
@@ -27,7 +28,8 @@ export const ActorsByAppearance = () => {
       </div>
 
       <div className="card-body">
-        {isLoading && 'Loading'}
+        <LoadingComponent isLoading={isLoading}/>
+        <ErrorComponent isError={isError}/>
         {actors.map(x => (
           <div key={x.name}>
             <div className="row pt-1 pb-1">

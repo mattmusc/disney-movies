@@ -1,5 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {ErrorComponent, LoadingComponent} from 'core/components';
 import {Dropdown} from 'core/components/dropdown';
 import {formatAsCurrency} from 'core/utils';
 import {format} from 'date-fns';
@@ -14,7 +15,7 @@ export const TopMovies = () => {
   const [nLatest, setNLatest] = React.useState(5);
   const [sortKey, setSortKey] = React.useState<'boxOffice' | 'budget'>('boxOffice');
 
-  const {data = [], isLoading} = useGetMoviesQuery();
+  const {data = [], isLoading, isError} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
   const topMovies = data
@@ -49,7 +50,9 @@ export const TopMovies = () => {
       </div>
 
       <div className="card-body">
-        {isLoading && 'Loading'}
+        <LoadingComponent isLoading={isLoading}/>
+        <ErrorComponent isError={isError}/>
+
         {topMovies.map((m: Movie) => (
           <div key={m.id}>
             <div className="row pt-1 pb-1">

@@ -1,12 +1,13 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {ErrorComponent, LoadingComponent} from 'core/components';
 import {useFrequency} from 'core/hooks';
 import {format} from 'date-fns';
 import {useGetMoviesQuery} from 'features/dashboard/api';
 import React from 'react';
 
 export const CompaniesByProductions = () => {
-  const {data = [], isLoading} = useGetMoviesQuery();
+  const {data = [], isLoading, isError} = useGetMoviesQuery();
   const currentYear = format(new Date(), 'yyyy');
 
   const {hist: companies} = useFrequency({data, k: 'productionCompany', limit: null});
@@ -21,7 +22,9 @@ export const CompaniesByProductions = () => {
       </div>
 
       <div className="card-body">
-        {isLoading && 'Loading'}
+        <LoadingComponent isLoading={isLoading}/>
+        <ErrorComponent isError={isError}/>
+
         {companies.map(x => (
           <div key={x.name}>
             <div className="row pt-1 pb-1">

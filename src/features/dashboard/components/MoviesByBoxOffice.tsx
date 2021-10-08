@@ -1,3 +1,4 @@
+import {ErrorComponent} from 'core/components';
 import {ReactECharts} from 'core/components/charts/ReactECharts';
 import {formatAsCurrency} from 'core/utils';
 import {useGetMoviesQuery} from 'features/dashboard/api';
@@ -11,7 +12,7 @@ import React from 'react';
  * @constructor
  */
 export const MoviesByBoxOffice = () => {
-    const {data = [], isLoading} = useGetMoviesQuery();
+    const {data = [], isLoading, isError} = useGetMoviesQuery();
 
     const [sortKey, setSortKey] = React.useState<'boxOffice' | 'budget'>('boxOffice');
     const [boxOfficeFilter, setBoxOfficeFilter] = React.useState<'all' | 'with' | 'without'>('all');
@@ -118,69 +119,73 @@ export const MoviesByBoxOffice = () => {
           className="card-body"
           style={{overflowY: 'scroll'}}
         >
-          <ReactECharts
-            loading={isLoading}
-            option={{
-              tooltip: {
-                formatter: params => {
-                  if (Array.isArray(params)) {
-                    return `${params[0].name} ${formatAsCurrency(params[0].value as number)}`;
-                  }
-                  return `${params['name']} <span class="fw-bold" style="margin-left: 0.75em">${formatAsCurrency(params.value as number)}</span>`;
+          <ErrorComponent isError={isError}/>
+
+          {!isLoading && !isError && (
+            <ReactECharts
+              loading={isLoading}
+              option={{
+                tooltip: {
+                  formatter: params => {
+                    if (Array.isArray(params)) {
+                      return `${params[0].name} ${formatAsCurrency(params[0].value as number)}`;
+                    }
+                    return `${params['name']} <span class="fw-bold" style="margin-left: 0.75em">${formatAsCurrency(params.value as number)}</span>`;
+                  },
                 },
-              },
-              series: [
-                {
-                  type: 'treemap',
-                  data: treeData,
-                  label: {
-                    show: true,
-                    formatter: '{b}'
-                  },
-                  upperLabel: {
-                    show: true,
-                    height: 30,
-                    color: '#fff',
-                  },
-                  itemStyle: {
-                    borderColor: '#fff'
-                  },
-                  levels: [
-                    {
-                      itemStyle: {
-                        borderColor: '#777',
-                        borderWidth: 0,
-                        gapWidth: 1
-                      },
-                      upperLabel: {
-                        show: false
-                      },
+                series: [
+                  {
+                    type: 'treemap',
+                    data: treeData,
+                    label: {
+                      show: true,
+                      formatter: '{b}'
                     },
-                    {
-                      itemStyle: {
-                        borderColor: '#555',
-                        borderWidth: 5,
-                        gapWidth: 1
-                      },
-                      emphasis: {
+                    upperLabel: {
+                      show: true,
+                      height: 30,
+                      color: '#fff',
+                    },
+                    itemStyle: {
+                      borderColor: '#fff'
+                    },
+                    levels: [
+                      {
                         itemStyle: {
-                          borderColor: '#ddd'
+                          borderColor: '#777',
+                          borderWidth: 0,
+                          gapWidth: 1
+                        },
+                        upperLabel: {
+                          show: false
+                        },
+                      },
+                      {
+                        itemStyle: {
+                          borderColor: '#555',
+                          borderWidth: 5,
+                          gapWidth: 1
+                        },
+                        emphasis: {
+                          itemStyle: {
+                            borderColor: '#ddd'
+                          }
+                        }
+                      },
+                      {
+                        colorSaturation: [0.35, 0.5],
+                        itemStyle: {
+                          borderWidth: 5,
+                          gapWidth: 1,
+                          borderColorSaturation: 0.6
                         }
                       }
-                    },
-                    {
-                      colorSaturation: [0.35, 0.5],
-                      itemStyle: {
-                        borderWidth: 5,
-                        gapWidth: 1,
-                        borderColorSaturation: 0.6
-                      }
-                    }
-                  ],
-                },
-              ]
-            }}
-          />
+                    ],
+                  },
+                ]
+              }}
+            />
+          )}
         </div>
 
       </div>
