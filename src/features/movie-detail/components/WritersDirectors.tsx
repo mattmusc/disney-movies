@@ -39,7 +39,7 @@ export const WritersDirectors = ({movieData}: WritersDirectorsProps) => {
             <div className="col-6">
               <h6>Director(s)</h6>
               {directors.map(director => (
-                <div className="pb-1">
+                <div key={director} className="text-black-50 pb-1">
                   <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                   {director}
                 </div>
@@ -49,7 +49,7 @@ export const WritersDirectors = ({movieData}: WritersDirectorsProps) => {
             <div className="col-6">
               <h6>Writers(s)</h6>
               {writers.map(writer => (
-                <div className="pb-1">
+                <div key={writer} className="text-black-50 pb-1">
                   <FontAwesomeIcon icon={faAngleRight} className="me-2 text-black"/>
                   {writer}
                 </div>

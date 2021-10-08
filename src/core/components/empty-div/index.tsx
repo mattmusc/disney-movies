@@ -11,7 +11,8 @@ export const EmptyDiv = ({cols = 5, data = [], classes = ''}: EmptyDivProps) => 
   return (
     <>
       {/* adds an empty div to match # cols div height */}
-      {emptyDivs.map(() => <div className={"text-black-50 pb-1".concat(` ${classes}`)}>&nbsp;</div>)}
+      {emptyDivs.map((_, i) =>
+        <div key={i} className={"text-black-50 pb-1".concat(` ${classes}`)}>&nbsp;</div>)}
     </>
   );
 };
