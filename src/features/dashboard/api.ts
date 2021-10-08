@@ -1,4 +1,5 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+import {SERVER_URL} from 'core/config';
 import {format} from 'date-fns';
 import {Movie} from 'features/types';
 
@@ -14,7 +15,7 @@ interface TopMoviesConfig {
 export const dashboardApi = createApi({
   reducerPath: 'dashboardApi',
 
-  baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:5000'}),
+  baseQuery: fetchBaseQuery({baseUrl: SERVER_URL}),
 
   endpoints: (builder) => ({
 

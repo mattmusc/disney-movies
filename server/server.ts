@@ -7,18 +7,18 @@ dotenv.config();
 const server = express();
 
 const PORT = process.env.SERVER_PORT || 5000;
-const CLIENT_URL = process.env.CLIENT_URL;
+const CLIENT_HOST = process.env.CLIENT_HOST;
 const CLIENT_PORT = process.env.CLIENT_PORT;
-const SERVER_URL = process.env.SERVER_URL;
+const SERVER_HOST = process.env.SERVER_HOST;
 
 server.use(cors({
-  origin: `${CLIENT_URL}:${CLIENT_PORT}`,
+  origin: `${CLIENT_HOST}:${CLIENT_PORT}`,
 }));
 
 server.use('/', jsonServer.router('./server/db.json'));
 
 server.listen(PORT, () => {
   console.log(`server listening on port ${PORT}`)
-  console.log(`server url: ${SERVER_URL}`)
-  console.log(`client url: ${CLIENT_URL}:${CLIENT_PORT}`)
+  console.log(`server host: ${SERVER_HOST}`)
+  console.log(`client host: ${CLIENT_HOST}:${CLIENT_PORT}`)
 });
