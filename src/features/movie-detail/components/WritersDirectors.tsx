@@ -1,6 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {EmptyDiv} from 'core/components';
+import {EmptyDiv, LoadingComponent} from 'core/components';
 import {Movie} from 'features/types';
 import React from 'react';
 
@@ -33,7 +33,7 @@ export const WritersDirectors = ({movieData}: WritersDirectorsProps) => {
         <h5>Directors and Writers</h5>
       </div>
       <div className="card-body">
-        {!movieData && 'Loading...'}
+        <LoadingComponent isLoading={!movieData}/>
         {movieData && (
           <div className="row">
             <div className="col-6">

@@ -1,5 +1,6 @@
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {LoadingComponent} from 'core/components';
 import {formatAsCurrency} from 'core/utils';
 import {format, parse} from 'date-fns';
 import {Movie} from 'features/types';
@@ -53,7 +54,7 @@ export const GeneralInformation = ({movieData}: GeneralInformationProps) => {
         <h5>General Infomation</h5>
       </div>
       <div className="card-body">
-        {!movieData && 'Loading...'}
+        <LoadingComponent isLoading={!movieData}/>
         {movieData && details.map(d => (
           <div key={d.key}>
             <div className="row pb-1">

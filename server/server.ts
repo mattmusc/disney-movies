@@ -2,6 +2,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import jsonServer from 'json-server';
+import {insertRandomDelayInResponse} from './utils/insert-random-delay-in-response';
 
 dotenv.config();
 const server = express();
@@ -14,6 +15,8 @@ const SERVER_HOST = process.env.SERVER_HOST;
 server.use(cors({
   origin: `${CLIENT_HOST}:${CLIENT_PORT}`,
 }));
+
+server.use(insertRandomDelayInResponse);
 
 server.use('/', jsonServer.router('./server/db.json'));
 
