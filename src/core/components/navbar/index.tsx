@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, useRouteMatch} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 interface NavItemLinkProps {
   children: React.ReactElement | string;
@@ -16,7 +16,7 @@ const NavItemLink = ({children, path, to}: NavItemLinkProps) => {
 };
 
 export const Navbar = () => {
-  const {path} = useRouteMatch();
+  const {pathname} = useLocation();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav mr-auto">
-          <NavItemLink path={path} to="/">
+          <NavItemLink path={pathname} to="/">
             Home
           </NavItemLink>
         </ul>

@@ -39,7 +39,7 @@ export function ReactECharts({option, style, settings, loading}: ReactEChartsPro
     // Update chart
     if (chartRef.current !== null) {
       const chart = getInstanceByDom(chartRef.current);
-      chart.setOption(option, settings);
+      chart?.setOption(option, settings);
     }
   }, [option, settings]);
 
@@ -48,7 +48,7 @@ export function ReactECharts({option, style, settings, loading}: ReactEChartsPro
     if (chartRef.current !== null) {
       const chart = getInstanceByDom(chartRef.current);
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-      loading === true ? chart.showLoading() : chart.hideLoading();
+      loading === true ? chart?.showLoading() : chart?.hideLoading();
     }
   }, [loading]);
 
