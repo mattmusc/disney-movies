@@ -27,6 +27,7 @@ export const MoviesByBoxOfficeAndYear = () => {
       parse(m.releaseDate, 'yyyy-mm-dd', new Date()) || 0,
       m.boxOffice || 0,
       m.title,
+      m.id,
     ])
     .filter(([a, b]) => a && b);
 

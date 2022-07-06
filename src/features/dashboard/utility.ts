@@ -1,20 +1,17 @@
+import {MovieNode} from "core/types";
 import {Movie} from 'features/types';
 
-type Node = {
-  name: string;
-  value: number;
-  children: Node[];
-};
-
-export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) => {
+export const createTree = (nodes: MovieNode[], m: Movie, idx: number, arr: Movie[]) => {
   const boxOffice = m.boxOffice || 0;
 
   if (nodes.length === 0) {
     return [
       {
+        id: -1,
         name: '> 100M',
         value: boxOffice,
         children: [{
+          id: m.id,
           name: `${m.title} (${m.releaseDate})`,
           value: boxOffice,
           children: [],
@@ -27,6 +24,7 @@ export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) =
 
     const children = nodes[nodes.length - 1].children;
     children.push({
+      id: m.id,
       name: `${m.title} (${m.releaseDate})`,
       value: boxOffice,
       children: [],
@@ -39,9 +37,11 @@ export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) =
     return [
       ...nodes,
       {
+        id: -1,
         name: '> 35M',
         value: boxOffice,
         children: [{
+          id: m.id,
           name: `${m.title} (${m.releaseDate})`,
           value: boxOffice,
           children: [],
@@ -53,6 +53,7 @@ export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) =
 
     const children = nodes[nodes.length - 1].children;
     children.push({
+      id: m.id,
       name: `${m.title} (${m.releaseDate})`,
       value: boxOffice,
       children: [],
@@ -65,9 +66,11 @@ export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) =
     return [
       ...nodes,
       {
+        id: -1,
         name: '< 35M',
         value: boxOffice,
         children: [{
+          id: m.id,
           name: `${m.title} (${m.releaseDate})`,
           value: boxOffice,
           children: [],
@@ -82,6 +85,7 @@ export const createTree = (nodes: Node[], m: Movie, idx: number, arr: Movie[]) =
 
     const children = nodes[nodes.length - 1].children;
     children.push({
+      id: m.id,
       name: `${m.title} (${m.releaseDate})`,
       value: boxOffice,
       children: [],

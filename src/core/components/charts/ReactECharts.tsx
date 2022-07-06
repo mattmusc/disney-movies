@@ -2,6 +2,8 @@ import type {ECharts, EChartsOption, SetOptionOpts} from 'echarts';
 import {getInstanceByDom, init} from 'echarts';
 import type {CSSProperties} from 'react';
 import React, {useEffect, useRef} from 'react';
+import {useNavigate} from "react-router-dom";
+import {MovieNode} from "../../types";
 
 export interface ReactEChartsProps {
   option: EChartsOption;
@@ -11,6 +13,8 @@ export interface ReactEChartsProps {
 }
 
 export function ReactECharts({option, style, settings, loading}: ReactEChartsProps): JSX.Element {
+  const navigate = useNavigate()
+
   const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,12 +32,24 @@ export function ReactECharts({option, style, settings, loading}: ReactEChartsPro
 
     window.addEventListener('resize', resizeChart);
 
+    chart?.on('dblclick', (params) => {
+      if (Array.isArray(params.data)) {
+        // id is the latest element, as created by MoviesByBoxOfficeAndYear
+        const [,,,id] = params.data as any[];
+        navigate(`/m/${id}`);
+      } else {
+        const data = params.data as MovieNode;
+        navigate(`/m/${data.id}`);
+      }
+    });
+
     // Return cleanup function
     return () => {
+      chart?.off('click');
       chart?.dispose();
       window.removeEventListener('resize', resizeChart);
     };
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     // Update chart
